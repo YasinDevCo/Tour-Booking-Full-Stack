@@ -1,0 +1,534 @@
+.headerDashboard {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  display: flex;
+}
+
+.formDashboard .form {
+  background: var(--card-bg, #fff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formDashboard .form h4 {
+  text-align: center;
+  color: var(--primary-color, #007bff);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.formDashboard .form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.formDashboard .form input:focus {
+  border-color: var(--primary-color, #007bff);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.formDashboard .btn {
+  background: var(--primary-color, #007bff);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formDashboard .btn:hover {
+  background: var(--primary-hover, #0056b3);
+}
+
+/* .formDashboard {
+  box-shadow: rgba(0, 0, 0, 0.362) 0px 18px 50px -10px;
+  border-radius: 14px;
+  padding: 30px 10px;
+}
+.formDashboard .form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
+}
+.formDashboard .form input {
+  outline: none;
+  padding: 10px;
+  line-height: 2rem;
+  border-radius: 14px;
+  border: none;
+  box-shadow: rgba(104, 104, 104, 0.213) 0px 0px 2px 1px;
+} */
+.sectionDashboard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px;
+  gap: 20px;
+  width: 100%;
+  min-height: 50vh;
+}
+.sectionDashboard .menuDashboard {
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.362) 0px 18px 50px -10px;
+  width: calc(100% - 75% - 10px);
+  padding: 20px;
+  height: auto;
+  position: sticky;
+  top: 100px;
+  right: 0;
+}
+.sectionDashboard .menuDashboard ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  color: var(--heading-color);
+}
+.sectionDashboard .menuDashboard ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.sectionDashboard .menuDashboard ul .logout {
+  background: rgb(244, 59, 59);
+  border: none;
+}
+.sectionDashboard .menuDashboard ul li.active {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.sectionDashboard .mainDashboard {
+  width: calc(100% - 25% - 10px);
+}
+.usersDashboard {
+  display: flex;
+
+  gap: 40px;
+  flex-direction: column;
+}
+.add {
+  background: rgba(45, 118, 255, 0.433);
+  box-shadow: rgba(0, 0, 0, 0.362) 0px 18px 50px -10px;
+  padding: 10px;
+  border-radius: 14px;
+}
+.add h4 {
+  margin: 10px;
+}
+.usersDashboard .form {
+  width: 100%;
+  background: var(--card-bg, #fff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.usersDashboard .form h4 {
+  text-align: center;
+  color: var(--primary-color, #007bff);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.usersDashboard .form input {
+  width: calc(100% / 4 - 12px);
+  padding: 10px;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.usersDashboard .form input:focus {
+  border-color: var(--primary-color, #007bff);
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.usersDashboard .form button {
+  background: var(--primary-color, #007bff);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.usersDashboard .form button:hover {
+  background: var(--primary-hover, #0056b3);
+}
+
+.list {
+  box-shadow: rgba(0, 0, 0, 0.362) 0px 18px 50px -10px;
+  border-radius: 14px;
+  padding: 10px;
+  padding-top: 20px;
+}
+.list h3 {
+  color: var(--primary-color);
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+/* استایل هر پست */
+.post-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.post-item:hover {
+  /* transform: translateY(-8px); */
+  background-color: #eeeeee;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* استایل اطلاعات پست */
+.post-info {
+  flex: 1;
+}
+
+.post-title {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.post-location {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.post-price {
+  font-size: 18px;
+  color: #0077cc;
+}
+
+/* استایل دکمه‌ها */
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-btn,
+.edit-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn {
+  background-color: #ff6347;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53e3e;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Container اصلی */
+.booking-container {
+  max-width: 900px;
+  height: 600px;
+  overflow-y: scroll;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* عنوان */
+.booking-container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* لیست رزروها */
+.booking-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* هر رزرو */
+.booking-item {
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* هدر رزرو */
+.booking-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ticket-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #0077cc;
+}
+
+.tour-name {
+  font-size: 18px;
+  color: #333;
+}
+
+/* جزئیات رزرو */
+.booking-details {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.booking-card {
+  border-bottom: 1px solid #0056b3 !important;
+}
+.booking-card:last-child {
+  border: none !important;
+}
+
+.booking-details p {
+  margin: 0;
+}
+
+.detail-icon {
+  margin-right: 5px;
+  color: #0077cc;
+}
+
+/* پیام وقتی هیچ رزروی پیدا نشه */
+.no-booking {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+.edit-modal .modal-content {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-modal .modal-header {
+  border-bottom: 1px solid #dee2e6;
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-modal .modal-footer {
+  border-top: 1px solid #dee2e6;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* استایل هر کاربر */
+.user-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.user-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* استایل اطلاعات کاربر */
+.user-info {
+  flex: 1;
+}
+
+.user-username {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.user-role {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* استایل دکمه‌ها */
+.user-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.delete-btn,
+.edit-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn {
+  background-color: #ff6347;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #e53e3e;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+/* استایل آیکون‌ها */
+.icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.modal__form input,
+.modal__form textarea {
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  border: 1px solid #0077cc !important;
+  border-radius: 5px;
+}
+.modal__header {
+  direction: ltr;
+}
+@media only screen and (max-width: 768px) {
+  .sectionDashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionDashboard .menuDashboard {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: sticky;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionDashboard .mainDashboard {
+    width: 100%;
+  }
+  .sectionDashboard .menuDashboard ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between !important;
+    padding: 10px;
+  }
+  .sectionDashboard .menuDashboard ul .logout {
+    display: none;
+  }
+  .sectionDashboard .menuDashboard ul li span {
+    display: none;
+  }
+  .headerDashboard .btn__home {
+    display: none;
+  }
+  .form {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 15px;
+  }
+  .form input {
+    width: 100% !important;
+  }
+}
